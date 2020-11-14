@@ -1,0 +1,27 @@
+.nav {
+    border-bottom: 2px solid #007bff;
+    padding: 20px;
+}
+.nav .nav__lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav .nav__list {
+    list-style: none;
+}
+
+.nav .nav__link {
+    font-size:1.5em ;
+    text-decoration: none;
+    color: #007bff;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+.nav .nav__link:hover {
+    border: 1px solid #007bff;
+}

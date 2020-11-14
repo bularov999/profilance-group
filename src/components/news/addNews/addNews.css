@@ -1,0 +1,64 @@
+.modal {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    display: flex;
+    top:0;
+    align-items: flex-start;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal__content {
+    position: relative;
+    padding: 40px;
+    min-width: 20%;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.modal__content.active {
+    transition: all 0.4s;
+}
+
+.modal__cross {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.modal__cross-item {
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.modal__input-block {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.modal__input {
+    padding: 20px;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid #007bff;
+}
+
+.modal__submit-btn {
+    color: #007bff;
+}
+
+.modal__submit-btn:hover {
+    background: #007bff;
+    color: #ffffff;
+}
